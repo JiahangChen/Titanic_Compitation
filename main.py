@@ -23,7 +23,7 @@ model.add(keras.layers.Dense(units=1,kernel_initializer='uniform',activation='si
 
 model.compile(optimizer='adam',loss='binary_crossentropy',metrics=['acc'])
 
-history = model.fit(x,y,epochs=1000,batch_size=50,verbose=0)
+history = model.fit(x,y,epochs=1500,batch_size=50,verbose=0)
 
 l = model.predict(a)
 
